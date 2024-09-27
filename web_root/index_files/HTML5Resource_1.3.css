@@ -1,0 +1,201 @@
+/*
+ * Modified 29/03/2016 for all latest HTML5 resources
+ */
+
+@font-face
+{
+    font-family: 'Arnold-21';
+    src:url('/fonts/Arnold-21.ttf.woff') format('woff'),
+        url('/fonts/Arnold-21.ttf.svg#Arnold-21') format('svg'),
+        url('/fonts/Arnold-21.ttf.eot'),
+        url('/fonts/Arnold-21.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Arnold 2.1';
+    src:url('/fonts/Arnold-21.ttf.woff') format('woff'),
+        url('/fonts/Arnold-21.ttf.svg#Arnold-21') format('svg'),
+        url('/fonts/Arnold-21.ttf.eot'),
+        url('/fonts/Arnold-21.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html
+{
+	overflow:hidden;
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+	overflow:hidden;
+	padding: 0;
+	margin: 0;
+}
+
+h2
+{
+	font-size: 1.5em;
+	margin: 0;
+}
+
+#canvas
+{
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: #02333F;
+}
+
+#childCanvasFrame
+{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	border: none;
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0;
+	padding: 0;
+}
+
+
+#resourceName
+{
+   font-family: 'Arnold-21';
+   color: #ffffff;
+   font-size: 20px;
+}
+
+#loaderContent
+{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 15%;
+}
+
+#ldr1
+{
+	margin: 0 2em;
+}
+
+	#ldr1.h1
+	{
+		font-size: 2em;
+	}
+
+#loadingText
+{
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0.5em auto;
+}
+
+.loadingbar
+{
+	border: 0.2em solid #bbbbbb;
+	margin: auto;
+	text-align: left;
+	height: 2em;
+	margin: 2em auto 0em auto;
+	max-width: 30em;
+}
+
+.loadingfill
+{
+	background: rgb(127,127,127);
+	background: -moz-linear-gradient(left, rgba(127,127,127,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(127,127,127,1) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(127,127,127,1) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f7f7f', endColorstr='#ffffff',GradientType=1 );
+	width: 0%;
+	height: 100%;
+}
+
+/*
+.loadingbar
+{
+	border: 0.2em solid #00A4A4;
+	margin: auto;
+	text-align: left;
+	height: 2em;
+	margin: 2em auto 0em auto;
+	max-width: 30em;
+}
+
+.loadingfill
+{
+	background: rgb(0,164,164);
+	background: -moz-linear-gradient(left,  rgba(0,164,164,1) 0%, rgba(110,216,216,1) 100%);
+	background: -webkit-linear-gradient(left,  rgba(0,164,164,1) 0%,rgba(110,216,216,1) 100%);
+	background: linear-gradient(to right,  rgba(0,164,164,1) 0%,rgba(110,216,216,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a4a4', endColorstr='#6ed8d8',GradientType=1 );
+	width: 0%;
+	height: 100%;
+}
+*/
+#preloadFont
+{
+	font-family: 'Arnold 2.1';
+	visibility: hidden;
+}
+
+
+#loadingError, #initError
+{
+	margin: auto;
+	font-weight: bold;
+	max-width: 30em;
+}
+
+#loadingError
+{
+	font-size: 1.1em;
+	display:none;
+}
+
+#initError
+{
+	font-size: 2em;
+	display:none;
+}
+
+.siteLogo
+{
+	width: 100%;
+	max-width: 222px;
+}
+
+#branding p
+{
+	font-size: 1em;
+	margin: 0;
+}
+
+a:link, a:visited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #ffffff;
+	text-decoration: none;
+}
